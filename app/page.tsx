@@ -663,7 +663,7 @@ export default function Home() {
     <div className="mt-16 overflow-hidden rounded-[35px] shadow-2xl">
 
       <iframe
-        src="Phttps://share.google/XGWd0e90ZmSO5ck3FP_LINK_HERE"
+        src="https://www.google.com/maps/embed"
         width="100%"
         height="500"
         style={{ border: 0 }}
