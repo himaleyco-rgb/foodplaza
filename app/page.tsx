@@ -15,7 +15,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
 
           <div>
-
             <h1 className="text-2xl md:text-3xl font-black tracking-[4px]">
               FOOD PLAZA
             </h1>
@@ -23,10 +22,8 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[3px] text-[#7b6d5f] mt-1">
               Shoghi • Shimla • Himachal Pradesh
             </p>
-
           </div>
 
-          {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-10 font-semibold">
 
             <a href="#about" className="hover:text-[#C6923D] transition">
@@ -41,20 +38,12 @@ export default function Home() {
               Why Us
             </a>
 
-            <a href="#menu" className="hover:text-[#C6923D] transition">
-              Menu
-            </a>
-
-            <a href="#reviews" className="hover:text-[#C6923D] transition">
-              Reviews
-            </a>
-
             <a href="#gallery" className="hover:text-[#C6923D] transition">
               Gallery
             </a>
 
-            <a href="#booking" className="hover:text-[#C6923D] transition">
-              Booking
+            <a href="#instagram" className="hover:text-[#C6923D] transition">
+              Instagram
             </a>
 
             <a href="#contact" className="hover:text-[#C6923D] transition">
@@ -63,7 +52,6 @@ export default function Home() {
 
           </div>
 
-          {/* MOBILE BUTTON */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden text-3xl"
@@ -91,20 +79,12 @@ export default function Home() {
             Why Us
           </a>
 
-          <a href="#menu" onClick={() => setMenuOpen(false)}>
-            Menu
-          </a>
-
-          <a href="#reviews" onClick={() => setMenuOpen(false)}>
-            Reviews
-          </a>
-
           <a href="#gallery" onClick={() => setMenuOpen(false)}>
             Gallery
           </a>
 
-          <a href="#booking" onClick={() => setMenuOpen(false)}>
-            Booking
+          <a href="#instagram" onClick={() => setMenuOpen(false)}>
+            Instagram
           </a>
 
           <a href="#contact" onClick={() => setMenuOpen(false)}>
@@ -119,7 +99,7 @@ export default function Home() {
 
         <img
           src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
-          alt="Food Plaza"
+          alt="Restaurant"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
@@ -158,37 +138,21 @@ export default function Home() {
             and unforgettable Himalayan hospitality.
           </motion.p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
-
-            <button className="bg-[#C6923D] hover:bg-[#b98530] transition text-white px-10 py-5 rounded-full text-lg font-bold shadow-2xl">
-              Explore Menu
-            </button>
-
-            <button className="border border-white hover:bg-white hover:text-black transition text-white px-10 py-5 rounded-full text-lg font-bold">
-              Book Table
-            </button>
-
-          </div>
-
         </div>
 
       </section>
 
       {/* ABOUT */}
-      <motion.section
+      <section
         id="about"
         className="py-24 px-6 md:px-20"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
           <img
             src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2070&auto=format&fit=crop"
-            alt="Restaurant Interior"
+            alt="Restaurant"
             className="rounded-[35px] shadow-2xl h-[650px] object-cover w-full"
           />
 
@@ -209,48 +173,16 @@ export default function Home() {
               and warm hospitality into one unforgettable dining experience.
             </p>
 
-            <div className="grid grid-cols-2 gap-5 mt-10">
-
-              <div className="bg-white rounded-[25px] p-6 shadow-xl">
-
-                <h3 className="text-3xl font-black">
-                  100%
-                </h3>
-
-                <p className="mt-2 text-[#5e5146]">
-                  Pure Vegetarian
-                </p>
-
-              </div>
-
-              <div className="bg-white rounded-[25px] p-6 shadow-xl">
-
-                <h3 className="text-3xl font-black">
-                  Luxury
-                </h3>
-
-                <p className="mt-2 text-[#5e5146]">
-                  Himalayan Experience
-                </p>
-
-              </div>
-
-            </div>
-
           </div>
 
         </div>
 
-      </motion.section>
+      </section>
 
       {/* SPECIALITY */}
-      <motion.section
+      <section
         id="speciality"
         className="py-24 px-6 md:px-20 bg-white"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
 
         <div className="max-w-7xl mx-auto text-center">
@@ -285,15 +217,11 @@ export default function Home() {
                 className="overflow-hidden rounded-[35px] shadow-2xl bg-[#f6f1e8]"
               >
 
-                <div className="overflow-hidden">
-
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="h-[450px] w-full object-cover hover:scale-110 transition duration-700"
-                  />
-
-                </div>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="h-[450px] w-full object-cover hover:scale-110 transition duration-700"
+                />
 
                 <div className="p-8">
 
@@ -311,16 +239,12 @@ export default function Home() {
 
         </div>
 
-      </motion.section>
+      </section>
 
       {/* WHY US */}
-      <motion.section
+      <section
         id="why"
         className="py-24 px-6 md:px-20 bg-[#2B1F1A] text-white"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
 
         <div className="max-w-7xl mx-auto text-center">
@@ -344,7 +268,7 @@ export default function Home() {
 
               <div
                 key={item}
-                className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-[30px] p-10"
+                className="bg-white/10 rounded-[30px] p-10"
               >
 
                 <h3 className="text-2xl font-black">
@@ -359,139 +283,12 @@ export default function Home() {
 
         </div>
 
-      </motion.section>
-
-      {/* MENU */}
-      <motion.section
-        id="menu"
-        className="py-24 px-6 md:px-20 bg-[#f3ece2]"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-
-        <div className="max-w-7xl mx-auto text-center">
-
-          <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
-            Our Menu
-          </p>
-
-          <h2 className="mt-5 text-5xl md:text-6xl font-black">
-            Himalayan Pure Veg Delights
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
-
-            {[
-              {
-                name: "Traditional Pahadi Siddu",
-                price: "₹180",
-              },
-              {
-                name: "Veg Steam Momos",
-                price: "₹160",
-              },
-              {
-                name: "Himachali Dham Thali",
-                price: "₹350",
-              },
-              {
-                name: "Paneer Butter Masala",
-                price: "₹280",
-              },
-              {
-                name: "Veg Fried Rice",
-                price: "₹220",
-              },
-              {
-                name: "Masala Chai",
-                price: "₹80",
-              },
-            ].map((item) => (
-
-              <div
-                key={item.name}
-                className="bg-white rounded-[30px] p-8 shadow-xl flex items-center justify-between"
-              >
-
-                <h3 className="text-2xl font-bold">
-                  {item.name}
-                </h3>
-
-                <span className="text-2xl font-black text-[#C6923D]">
-                  {item.price}
-                </span>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </motion.section>
-
-      {/* REVIEWS */}
-      <motion.section
-        id="reviews"
-        className="py-24 px-6 md:px-20 bg-white"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-
-        <div className="max-w-7xl mx-auto text-center">
-
-          <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
-            Customer Reviews
-          </p>
-
-          <h2 className="mt-5 text-5xl md:text-6xl font-black">
-            What Guests Say
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-
-            {[
-              "Best vegetarian restaurant in Shimla with amazing Siddu.",
-              "Luxury atmosphere and authentic Himachali taste.",
-              "Beautiful mountain vibes and excellent hospitality.",
-            ].map((review, index) => (
-
-              <div
-                key={index}
-                className="bg-[#f6f1e8] rounded-[35px] p-10 shadow-xl"
-              >
-
-                <p className="text-3xl">
-                  ⭐⭐⭐⭐⭐
-                </p>
-
-                <p className="mt-6 text-lg leading-relaxed text-[#5e5146]">
-                  {review}
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </motion.section>
+      </section>
 
       {/* GALLERY */}
-      <motion.section
+      <section
         id="gallery"
         className="py-24 px-6 md:px-20 bg-[#f6f1e8]"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
 
         <div className="max-w-7xl mx-auto text-center">
@@ -531,123 +328,245 @@ export default function Home() {
 
         </div>
 
-      </motion.section>
+      </section>
+      {/* REVIEWS */}
+<section
+  id="reviews"
+  className="py-24 px-6 md:px-20 bg-white"
+>
 
-      {/* BOOKING */}
-      <motion.section
-        id="booking"
-        className="py-24 px-6 md:px-20 bg-white"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+  <div className="max-w-7xl mx-auto text-center">
+
+    <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
+      Customer Reviews
+    </p>
+
+    <h2 className="mt-5 text-5xl md:text-6xl font-black">
+      What Our Guests Say
+    </h2>
+
+    <p className="mt-6 text-[#5e5146] text-lg max-w-2xl mx-auto">
+      Loved by travellers, food lovers,
+      and families visiting Shimla & Shoghi.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8 mt-16">
+
+      {[
+        {
+          name: "Rahul Sharma",
+          review:
+            "Amazing Himachali food and beautiful mountain atmosphere. Best Siddu in Shimla.",
+        },
+
+        {
+          name: "Priya Verma",
+          review:
+            "Luxury interiors, pure veg food, and excellent hospitality. Highly recommended.",
+        },
+
+        {
+          name: "Aman Thakur",
+          review:
+            "Authentic taste with premium café vibes. A must visit restaurant in Shoghi.",
+        },
+      ].map((item, index) => (
+
+        <div
+          key={index}
+          className="bg-[#f6f1e8] rounded-[35px] p-10 shadow-xl text-left"
+        >
+
+          <div className="text-3xl">
+            ⭐⭐⭐⭐⭐
+          </div>
+
+          <p className="mt-6 text-lg leading-relaxed text-[#5e5146]">
+            {item.review}
+          </p>
+
+          <h3 className="mt-8 text-2xl font-black">
+            {item.name}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+      {/* INSTAGRAM */}
+      <section
+        id="instagram"
+        className="py-24 px-6 md:px-20 bg-[#2B1F1A] text-white"
       >
 
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center">
 
           <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
-            Reserve Table
+            Instagram
           </p>
 
           <h2 className="mt-5 text-5xl md:text-6xl font-black">
-            Book Your Dining Experience
+            Follow Our Food Journey
           </h2>
 
-          <div className="bg-[#f6f1e8] rounded-[35px] p-10 shadow-2xl mt-16 space-y-6">
+          <p className="mt-6 text-white/70 text-lg max-w-2xl mx-auto">
+            Discover premium Himachali flavours,
+            luxury dining vibes,
+            and beautiful mountain moments.
+          </p>
 
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full p-5 rounded-2xl bg-white outline-none"
-            />
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
 
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full p-5 rounded-2xl bg-white outline-none"
-            />
+            {[
+              "/images/siddu.png",
+              "/images/momos.png",
+              "/images/dham-thali.png",
+            ].map((image, index) => (
 
-            <input
-              type="date"
-              className="w-full p-5 rounded-2xl bg-white outline-none"
-            />
+              <div
+                key={index}
+                className="overflow-hidden rounded-[35px] shadow-2xl"
+              >
 
-            <button className="w-full bg-[#C6923D] hover:bg-[#b98530] transition text-white py-5 rounded-2xl text-lg font-bold">
-              Reserve Table
-            </button>
+                <img
+                  src={image}
+                  alt="Instagram"
+                  className="h-[420px] w-full object-cover hover:scale-110 transition duration-700"
+                />
+
+              </div>
+
+            ))}
 
           </div>
 
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            className="inline-block mt-12 bg-[#C6923D] hover:bg-[#b98530] transition px-10 py-5 rounded-full text-lg font-bold"
+          >
+            Follow On Instagram
+          </a>
+
         </div>
 
-      </motion.section>
+      </section>
 
       {/* CONTACT */}
-      <motion.section
+      <section
         id="contact"
         className="relative py-24 px-6 md:px-20 text-white overflow-hidden"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
 
         <img
-          src="https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop"
-          alt="Shimla"
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
+          alt="Restaurant"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/75"></div>
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
-          <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
-            Visit FOOD PLAZA
-          </p>
+          <div>
 
-          <h2 className="mt-5 text-5xl md:text-7xl font-black">
-            FOOD PLAZA SHOGHI
-          </h2>
+            <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
+              Contact Us
+            </p>
 
-          <p className="mt-8 text-xl text-white/80 leading-relaxed">
-            Alpine House Ashiana NH, Shoghi, Shimla, Himachal Pradesh
-          </p>
+            <h2 className="mt-5 text-5xl md:text-7xl font-black leading-tight">
+              Visit FOOD PLAZA SHOGHI
+            </h2>
 
-          <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
+            <p className="mt-8 text-lg text-white/80 leading-relaxed">
+              Experience authentic Himachali vegetarian cuisine,
+              luxury mountain dining,
+              and unforgettable hospitality in the heart of Shoghi.
+            </p>
 
-            <button className="bg-[#C6923D] hover:bg-[#b98530] transition px-10 py-5 rounded-full text-lg font-bold">
-              Call Now
-            </button>
+            <div className="mt-10 space-y-6">
 
-            <button className="border border-white hover:bg-white hover:text-black transition px-10 py-5 rounded-full text-lg font-bold">
-              Get Directions
-            </button>
+              <div>
+                <h3 className="text-2xl font-bold">
+                  📍 Address
+                </h3>
+
+                <p className="mt-2 text-white/70">
+                  Alpine House Ashiana NH,
+                  Shoghi, Shimla,
+                  Himachal Pradesh
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold">
+                  📞 Phone
+                </h3>
+
+                <p className="mt-2 text-white/70">
+                  +91 98765 43210
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold">
+                  ✉️ Email
+                </h3>
+
+                <p className="mt-2 text-white/70">
+                  foodplazashoghi@gmail.com
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-2xl border border-white/10 rounded-[35px] p-8 md:p-10">
+
+            <h3 className="text-3xl font-black">
+              Reserve A Table
+            </h3>
+
+            <div className="space-y-5 mt-8">
+
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-5 rounded-2xl bg-white/10 border border-white/10 outline-none placeholder:text-white/60"
+              />
+
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full p-5 rounded-2xl bg-white/10 border border-white/10 outline-none placeholder:text-white/60"
+              />
+
+              <textarea
+                placeholder="Your Message"
+                rows={5}
+                className="w-full p-5 rounded-2xl bg-white/10 border border-white/10 outline-none placeholder:text-white/60"
+              ></textarea>
+
+              <button className="w-full bg-[#C6923D] hover:bg-[#b98530] transition py-5 rounded-2xl text-lg font-bold">
+                Book Now
+              </button>
+
+            </div>
 
           </div>
 
         </div>
 
-      </motion.section>
+      </section>
 
-      {/* WHATSAPP BUTTON */}
-      <a
-        href="https://wa.me/919816055517"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl hover:scale-110 transition"
-      >
-        💬
-      </a>
-
-      {/* CALL BUTTON */}
-      <a
-        href="tel:+919999999999"
-        className="fixed bottom-24 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-[#C6923D] text-3xl text-white shadow-2xl hover:scale-110 transition"
-      >
-        📞
-      </a>
-      {/* GOOGLE MAP */}
+      {/* MAP */}
 <section className="py-24 px-6 md:px-20 bg-white">
 
   <div className="max-w-7xl mx-auto text-center">
@@ -663,7 +582,7 @@ export default function Home() {
     <div className="mt-16 overflow-hidden rounded-[35px] shadow-2xl">
 
       <iframe
-        src="https://www.google.com/maps/embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.3275423041828!2d77.1301768!3d31.044980000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057eebc0e36033%3A0xe1b625fa3c16698f!2sFOOD%20PLAZA!5e0!3m2!1sen!2sin!4v1779793856135!5m2!1sen!2sin"
         width="100%"
         height="500"
         style={{ border: 0 }}
@@ -677,6 +596,23 @@ export default function Home() {
   </div>
 
 </section>
+
+      {/* WHATSAPP */}
+      <a
+        href="https://wa.me/919816055517"
+        target="_blank"
+        className="fixed bottom-5 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl hover:scale-110 transition"
+      >
+        💬
+      </a>
+
+      {/* CALL */}
+      <a
+        href="tel:+919816055517"
+        className="fixed bottom-24 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-[#C6923D] text-3xl text-white shadow-2xl hover:scale-110 transition"
+      >
+        📞
+      </a>
 
       {/* FOOTER */}
       <footer className="bg-[#2B1F1A] text-white py-10 px-6">
