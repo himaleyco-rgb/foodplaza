@@ -447,7 +447,7 @@ export default function Home() {
           </div>
 
           <a
-            href="https://instagram.com/"
+            href="https://instagram.com/foodplazashoghi"
             target="_blank"
             className="inline-block mt-12 bg-[#C6923D] hover:bg-[#b98530] transition px-10 py-5 rounded-full text-lg font-bold"
           >
@@ -510,7 +510,7 @@ export default function Home() {
                 </h3>
 
                 <p className="mt-2 text-white/70">
-                  +91 98765 43210
+                  +91 9816055517
                 </p>
               </div>
 
