@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --cream: #F4EFE6;
+  --walnut: #2B1F1A;
+  --pine: #31473A;
+  --gold: #C6923D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--walnut);
+  font-family: 'Inter', sans-serif;
+}
