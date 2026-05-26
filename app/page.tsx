@@ -632,7 +632,7 @@ export default function Home() {
 
       {/* WHATSAPP BUTTON */}
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/919816055517"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 z-[9999] flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl hover:scale-110 transition"
@@ -647,6 +647,36 @@ export default function Home() {
       >
         📞
       </a>
+      {/* GOOGLE MAP */}
+<section className="py-24 px-6 md:px-20 bg-white">
+
+  <div className="max-w-7xl mx-auto text-center">
+
+    <p className="uppercase tracking-[5px] text-[#C6923D] text-sm">
+      Find Us
+    </p>
+
+    <h2 className="mt-5 text-5xl md:text-6xl font-black">
+      Visit FOOD PLAZA SHOGHI
+    </h2>
+
+    <div className="mt-16 overflow-hidden rounded-[35px] shadow-2xl">
+
+      <iframe
+        src="Phttps://share.google/XGWd0e90ZmSO5ck3FP_LINK_HERE"
+        width="100%"
+        height="500"
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* FOOTER */}
       <footer className="bg-[#2B1F1A] text-white py-10 px-6">
